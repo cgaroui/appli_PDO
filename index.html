@@ -7,16 +7,23 @@
     <title>liste recette </title>
 </head>
     <div id="wrapper">
+
+        <form action="listeRecette.php" method="post">
+            <!-- Vos champs de formulaire ici -->
+            
+        </form>
         <table>
             <p>liste des recette par catégorie </p>
             <tr>
-                <td>Nom de la recette</td>
-                <td>Temps de preparation</td>
-                <td>Type de recette</td>
-
+                <th>Nom de la recette</th>
+                <th>Temps de préparation</th>
+                <th>Type de recette</th>
             </tr>
+            <?php foreach ($recettes as $recette): ?>
+           
+            <?php endforeach; ?>
         </table>
-
+        
     </div>
 <body>
     
